@@ -9,11 +9,8 @@ function preload(){
   }
   console.log(window.localStorage.getItem('manager'));
 }
-function setup() {
- createCanvas(1840/4, 2039/4);
-  
+function setup() {  
 }
 
-function draw() {
-  image(img,0,0,1840/4,2039/4);
+function draw() {  
 }
