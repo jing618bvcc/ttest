@@ -14,6 +14,7 @@ function out(){
   localStorage.removeItem('password');
   localStorage.removeItem('username');
   o.style.display='show';
+  console.log(window.localStorage.getItem('manager'));
 }
 function show(obj, id){
   var o=document.getElementById("sign");
@@ -50,6 +51,7 @@ function show(obj, id){
         window.localStorage.setItem('email',fe[a]);
         window.localStorage.setItem('password',valpw);
         window.localStorage.setItem('username',valnm);
+        console.log(window.localStorage.getItem('manager'));
       }
       else{
         console.log("密碼錯誤");
