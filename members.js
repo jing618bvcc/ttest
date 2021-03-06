@@ -10,6 +10,9 @@ data1=loadJSON('https://spreadsheets.google.com/feeds/list/18t2EPSZbO8YNYMfURJBc
 function out(){
   var o=document.getElementById("sign");
   localStorage.removeItem('email');
+  localStorage.removeItem('manager');
+  localStorage.removeItem('password');
+  localStorage.removeItem('username');
   o.style.display='show';
 }
 function show(obj, id){
