@@ -8,7 +8,9 @@ function preload(){
     user1 = window.localStorage.getItem('manager');
     if(user1 == ""){
         o.style.display = 'none';
-    }
+    }else if(user1="null"){
+        o.style.display = 'none';
+                          }
     else{
         o.style.display = 'show';
     }
