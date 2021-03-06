@@ -3,7 +3,7 @@ var myHeading = document.querySelector('h1');
 myHeading.textContent = 'Hello world!';
 */
 function preload(){
-    img=loadImage("images/YYuntech_map_E.jpg");
+    img=loadImage("YYuntech_map_E.jpg");
     var o = document.getElementById("mm");
     user1 = window.localStorage.getItem('manager');
     if(user1 ==1){
