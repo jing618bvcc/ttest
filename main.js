@@ -6,13 +6,10 @@ function preload(){
     img=loadImage("images/YYuntech_map_E.jpg");
     var o = document.getElementById("mm");
     user1 = window.localStorage.getItem('manager');
-    if(user1 == ""){
+    if(user1 ==1){
+        o.style.display = '';
+    }else{
         o.style.display = 'none';
-    }else if(user1="null"){
-        o.style.display = 'none';
-                          }
-    else{
-        o.style.display = 'show';
     }
     console.log(window.localStorage.getItem('manager'));
 }
