@@ -1,7 +1,7 @@
 function preload(){
   img=loadImage("YYuntech_map_E.jpg");
  
-  user1=window.localStorage.getItem('manager')
+  user1=window.localStorage.getItem('manager');
  if(user1==1){
      document.getElementById("mm").style.display='';
     }else{
