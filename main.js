@@ -12,7 +12,7 @@ function preload(){
     else{
         o.style.display = 'show';
     }
-    console.log(window.localStorage.getItem('manager'))
+    console.log(window.localStorage.getItem('manager'));
 }
 
 function setup(){
