@@ -12,6 +12,7 @@ function preload(){
     else{
         o.style.display = 'show';
     }
+    window.localStorage.getItem('manager');
 }
 
 function setup(){
