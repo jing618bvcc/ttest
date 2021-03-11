@@ -52,13 +52,15 @@ function show(obj, id){
         window.localStorage.setItem('password',valpw);
         window.localStorage.setItem('username',valnm);
         console.log(window.localStorage.getItem('manager'));
+        alert('登入成功');
+        window.location.href='index.html';
       }
       else{
-        console.log("密碼錯誤");
+        alert('密碼錯誤');
       }
     }
    if(a==-1){
-     console.log("輸入錯誤");
+    alert('輸入錯誤');
    }
 })}
   
