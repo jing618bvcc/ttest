@@ -8,15 +8,15 @@ function preload(){
      document.getElementById("mm").style.display='none';
   }
   if(user2==null){
-         document.getElementById("login").style.display='show';
-         document.getElementById("login1").style.display='show';
+         document.getElementById("login").style.display='';
+         document.getElementById("login1").style.display='';
          document.getElementById("mm1").style.display='none';
          document.getElementById("mm2").style.display='none';
    }else{
      document.getElementById("login").style.display='none'; 
      document.getElementById("login1").style.display='none';
-     document.getElementById("mm1").style.display='show';
-     document.getElementById("mm2").style.display='show';
+     document.getElementById("mm1").style.display='';
+     document.getElementById("mm2").style.display='';
   }    
 }
 function setup() {  
