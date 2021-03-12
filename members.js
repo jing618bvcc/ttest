@@ -42,7 +42,7 @@ function out(){
     valunm= document.getElementById("username").value;
     //valem= document.getElementById("email").value;
     valpw= document.getElementById("password").value;
-    a=fn.indexOf(valunm) ;
+    a=fun.indexOf(valunm) ;
     //b=fe.indexOf(valem);
     c=fp.indexOf(valpw); 
     if(a>-1){
