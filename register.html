@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+    <iframe name="hidden_iframe" style="display: none;"></iframe>
+    <form action="https://script.google.com/macros/s/AKfycbzjxE18xRZiZyzSmNwVAo8RVVN4Ecjn3XAFTxnHhlD_o6geRWPkj9K55But98f8ny04mA/exec" method="post" target="hidden_iframe">
+      <input type="hidden" name="method" value="write"/>
+      <div id = "register" style="display: show;">
+        <h3>使用者名稱：<input type="text" name="id" id="id" placeholder="填入英文簡名" title="填入英文簡名"/><br/><br></h3>
+        <h3>姓名：<input type="text" name="name"  id="name" placeholder="填入姓名" title="填入姓名"/><br/><br></h3>
+        <h3>E-Mail：<input type="text" name="mail_address" id="mail_address" placeholder="填入E-mail" title="填入E-mail"/><br/><br></h3>
+        <h3>手機號碼：<input type="text" name="phone" id="phone" placeholder="填入電話號碼" title="填入電話號碼"/><br/><br></h3>
+        <h3>密碼：<input id="password" name="password" class="password" required type="password" placeholder = "密碼"></h3>
+        <input type="submit" value="提交" onclick='run()'>
+      </div>
+    </form>
+</body></html>
