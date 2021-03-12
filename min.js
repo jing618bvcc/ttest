@@ -7,10 +7,10 @@ function preload(){
    }else{
      document.getElementById("mm").style.display='none';
   }
-  if(user2==1){
-         document.getElementById("login").style.display='none';
+  if(user2==null){
+         document.getElementById("login").style.display='show';
    }else{
-     document.getElementById("login").style.display='show'; 
+     document.getElementById("login").style.display='none'; 
   }    
 }
 function setup() {  
