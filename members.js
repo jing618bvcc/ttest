@@ -6,6 +6,14 @@ var o=document.getElementById("sign");
 function preload(){
   btn= document.getElementById("submit");
 data1=loadJSON('https://spreadsheets.google.com/feeds/list/18t2EPSZbO8YNYMfURJBci1M8qSj2X_DmkgE8m49Y6sw/od6/public/values?alt=json')
+  var o=document.getElementById("sign");
+  user1=window.localStorage.getItem('email');
+  if(user1==null){
+    o.style.display='show';
+  }
+  else{
+    o.style.display='none';
+  }
   }
 function out(){
   var o=document.getElementById("sign");
@@ -15,16 +23,6 @@ function out(){
   localStorage.removeItem('username');
   o.style.display='show';
   console.log(window.localStorage.getItem('manager'));
-}
-function show(obj, id){
-  var o=document.getElementById("sign");
-  user1=window.localStorage.getItem('email');
-  if(user1==null){
-    o.style.display='show';
-  }
-  else{
-    o.style.display='none';
-  }
 }
  function setup(){
     data1.feed.entry.forEach((b)=>{
