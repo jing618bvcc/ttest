@@ -22,7 +22,7 @@ function out(){
   localStorage.removeItem('password');
   localStorage.removeItem('username');
   o.style.display='show';
-  console.log(window.localStorage.getItem('manager'));
+  window.location.href='index.html';
 }
  function setup(){
     data1.feed.entry.forEach((b)=>{
