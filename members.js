@@ -31,7 +31,7 @@ function out(){
     nm.push([b.gsx$name.$t]);
     em.push([b.gsx$email.$t]);
     pw.push([b.gsx$password.$t]);
-    mn.push([b.gsx$管理員積分.$t]);
+    mn.push([b.gsx$管理者積分.$t]);
    })
   let fn = nm.flat(Infinity);
   let fun = unm.flat(Infinity);
