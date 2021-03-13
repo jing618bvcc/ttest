@@ -8,6 +8,7 @@ function run(){
                             
         }else{             alert("密碼至少6個字元");
                            event.preventDefault();
+             }
   }else{alert("帳號至少6個字元");
          event.preventDefault();
 }
