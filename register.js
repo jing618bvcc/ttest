@@ -4,7 +4,7 @@ function run(){
   if(id>5){
         if(password>5){    alert("註冊成功");
                            window.location.href='https://jing618bvcc.github.io/ttest/';
-                           return true; 
+                          
         }else{             alert("密碼至少6個字元");
                            return false;
              }
