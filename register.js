@@ -3,8 +3,8 @@ function run(){
   password=document.getElementById("password").value.length;
   if(id>5){
         if(password>5){    alert("註冊成功");
-                           document.getElementById("check").submit();
-                           check.submit();
+                           document.getElementById("check").submit;
+                           check.submit;
                            window.location.href='https://jing618bvcc.github.io/ttest/';
                             return true;
         }else{             alert("密碼至少6個字元");
