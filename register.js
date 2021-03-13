@@ -5,8 +5,11 @@ function run(){
         if(password>5){    alert("註冊成功");
                            document.getElementById("check").submit();
                            window.location.href='https://jing618bvcc.github.io/ttest/';
-        }else{             alert("密碼至少6個字元");}
-  }else{alert("帳號至少6個字元");}
+                            return true;
+        }else{             alert("密碼至少6個字元");
+                           return false;}
+  }else{alert("帳號至少6個字元");
+        return false;}
 }
 function setup(){
 
