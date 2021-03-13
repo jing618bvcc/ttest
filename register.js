@@ -6,10 +6,10 @@ function run(){
                            window.location.href='https://jing618bvcc.github.io/ttest/';
                             
         }else{             alert("密碼至少6個字元");
-                           
+                           return false;
              }
   }else{alert("帳號至少6個字元");
-         
+         return false;}
 }
 function setup(){
 
