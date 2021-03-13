@@ -1,6 +1,6 @@
 function run(){
-  id=document.write(id.length);
-  password=document.write(password.length);
+  id=document.getElementById("id").value.length;
+  password=document.getElementById("password").value.length;
   if(id>5){
         if(password>5){    alert("註冊成功");
                            check.submit();
