@@ -10,7 +10,7 @@ function run(){
                            event.preventDefault();
              }
   }else{alert("帳號至少6個字元");
-         event.preventDefault();
+         event.preventDefault();}
 }
 function setup(){
 
