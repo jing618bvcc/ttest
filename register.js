@@ -10,9 +10,10 @@ function run(){
     $.post(exeurl, postData,(data)=>{
       alert(data),check=1
     })
+    alert('註冊成功');
     setTimeout("javascript:location.href='index.html'", 3000);
   }
-  
+}
 
 function setup(){
 
