@@ -10,7 +10,7 @@ function run(){
     $.post(exeurl, postData,(data)=>{
       alert(data),check=1
     })
-    alert('註冊成功');
+    
     window.location.href='index.html';
   }
 }
