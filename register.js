@@ -11,7 +11,7 @@ function run(){
       alert(data),check=1
     })
     alert('註冊成功');
-    setTimeout("javascript:location.href='index.html'", 3000);
+    window.location.href='index.html';
   }
 }
 
