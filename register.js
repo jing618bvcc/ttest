@@ -17,6 +17,7 @@ function getDATA(){
   EMAIL = document.getElementById("mail_address").value;
   PHONE = document.getElementById("phone").value;
   PASSWORD = document.getElementById("password").value;
+  password = document.getElementById("password").value.length;
 }
 
 function run(){
@@ -32,7 +33,6 @@ function run(){
     }
   }
   if(Check==0){
-    password=document.getElementById("password").value.length;
     if(password>=6){
       $.post(exeurl,{
         "method":"write",
