@@ -22,7 +22,6 @@ function getDATA(){
 
 function run(){
   getDATA();
-  document.write("請稍等......</br>");
   var a = GoogleJSON.feed.entry.length;
   nameCheck = ID;
   for(var i = 0; i < a; i++){
@@ -33,6 +32,7 @@ function run(){
     }
   }
   if(Check==0){
+    document.write("請稍等......</br>");
     if(password>=6){
       $.post(exeurl,{
         "method":"write",
