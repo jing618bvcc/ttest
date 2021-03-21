@@ -74,7 +74,5 @@ d=dmenu1.length;
   }
    document.getElementById("event").innerHTML = event1;
   //document.getElementById("menu").innerHTML =  tmenu1;
-    //console.log(smenu1);
-   
-   
+    //console.log(smenu1);   
 } 
