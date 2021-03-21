@@ -28,12 +28,12 @@ function setup() {
   let fdate=date.flat(Infinity);
   let ffo1=food1.flat(Infinity);
   let fdr1=drink1.flat(Infinity);
-  console.log(ffo1);
+  //console.log(ffo1);
   a=fj.length;
   b=fev.length;
   lmlm=menu1.length;
   
-  console.log(fdate);
+  //console.log(fdate);
   for(i=0;i<b;i++){
    ini.push(date[i])
   }  
@@ -66,17 +66,19 @@ d=dmenu1.length;
   }
   for(l=0;l<b;l++){
     c=ini[l].length-1
-    event1.push("<h3>活動:"+fev[l]+"目前參加人數:"+c+"人"+"</h3>");
+    event1.push(["<h3>活動:"+fev[l]+"目前參加人數:"+c+"人"+"</h3>"]);
   }
   for(o=0;o<smenu1.length;o++){
     l1=smenu1[o].length-1
-    tmenu1.push("<h3>"+smenu1[o][0]+":目前預定食物數量:"+l1+"人"+"</h3>")
+    event1[1].push("<h4>"+smenu1[o][0]+":目前預定食物數量:"+l1+"人"+"</h4>")
   }
    document.getElementById("event").innerHTML = event1;
-  document.getElementById("menu").innerHTML =  tmenu1;
-    console.log(smenu1);
+  //document.getElementById("menu").innerHTML =  tmenu1;
+    //console.log(smenu1);
    
    
+} 
+
 } 
 
 
