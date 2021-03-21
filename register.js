@@ -11,9 +11,19 @@ function setup(){
   var a = GoogleJSON.feed.entry.length;
 }
 
+function getDATA(){
+  ID = document.getElementById("id").value;
+  NAME = document.getElementById("name").value;
+  EMAIL = document.getElementById("mail_address").value;
+  PHONE = document.getElementById("phone").value;
+  PASSWORD = document.getElementById("password").value;
+}
+
 function run(){
+  getDATA();
+  document.write("請稍等......</br>");
   var a = GoogleJSON.feed.entry.length;
-  nameCheck = document.getElementById("id").value;
+  nameCheck = ID;
   for(var i = 0; i < a; i++){
     var b = GoogleJSON.feed.entry[i].gsx$username.$t;
     var c = GoogleJSON.feed.entry[i].gsx$name.$t;
@@ -22,16 +32,15 @@ function run(){
     }
   }
   if(Check==0){
-    
     password=document.getElementById("password").value.length;
     if(password>=6){
       $.post(exeurl,{
         "method":"write",
-        "id":document.getElementById("id").value,
-        "name":document.getElementById("name").value,
-        "mail_address":document.getElementById("mail_address").value,
-        "phone":document.getElementById("phone").value,
-        "password":document.getElementById("password").value
+        "id":ID,
+        "name":NAME,
+        "mail_address":EMAIL,
+        "phone":PHONE,
+        "password":PASSWORD
       },
       function (data) {
         document.write(data+"<br>");
@@ -45,5 +54,6 @@ function run(){
   }
   else{
     alert("帳號重複");
+    window.location.href = "register.html";
   }
 }
