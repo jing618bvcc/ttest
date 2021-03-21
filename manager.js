@@ -78,8 +78,3 @@ d=dmenu1.length;
    
    
 } 
-
-} 
-
-
-
