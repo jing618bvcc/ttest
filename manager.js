@@ -70,7 +70,7 @@ d=dmenu1.length;
   }
   for(o=0;o<smenu1.length;o++){
     l1=smenu1[o].length-1
-    tmenu1.push("<h3>"+smenu1[o][0]+"目前預定食物數量:"+l1+"人"+"</h3>")
+    tmenu1.push("<h3>"+smenu1[o][0]+":目前預定食物數量:"+l1+"人"+"</h3>")
   }
    document.getElementById("event").innerHTML = event1;
   document.getElementById("menu").innerHTML =  tmenu1;
